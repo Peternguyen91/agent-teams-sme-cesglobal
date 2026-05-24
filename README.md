@@ -16,6 +16,44 @@
 - 👥 **Nhân sự**: Đăng tuyển dụng, tạo gói offer, chuẩn bị phỏng vấn
 - ⚙️ **Vận hành**: Xử lý khiếu nại, soạn phản hồi khách hàng, xem xét hợp đồng
 
+### 🏢 Sơ đồ Tổ chức AI Agent Teams
+
+Plugin tổ chức 31 kỹ năng theo mô hình phòng ban như một doanh nghiệp thật. Bạn là **Giám đốc**, Claude là **Trưởng phòng Điều phối** dẫn dắt 4 phòng ban chuyên môn:
+
+```mermaid
+flowchart TD
+    CEO["👤 BẠN<br/>Chủ Doanh Nghiệp / CEO"]:::ceo
+    CLAUDE["🤖 CLAUDE<br/>Trưởng phòng Điều phối AI"]:::claude
+
+    CEO -->|Ra lệnh & Phê duyệt| CLAUDE
+
+    CLAUDE --> DEPT1["🏠 PHÒNG ĐIỀU HÀNH<br/>Tổng quan & Điều phối<br/>(6 kỹ năng)"]:::dept1
+    CLAUDE --> DEPT2["💰 PHÒNG TÀI CHÍNH<br/>Kế toán & Dòng tiền<br/>(10 kỹ năng)"]:::dept2
+    CLAUDE --> DEPT3["📣 PHÒNG MARKETING & SALES<br/>Bán hàng & Khách hàng<br/>(8 kỹ năng)"]:::dept3
+    CLAUDE --> DEPT4["👥 PHÒNG NHÂN SỰ & VẬN HÀNH<br/>HR & Chăm sóc KH<br/>(7 kỹ năng)"]:::dept4
+
+    DEPT1 --> S1A["📊 Báo cáo tổng quan<br/>Tóm tắt đầu tuần<br/>Tổng kết cuối tuần<br/>Báo cáo quý"]:::skill
+
+    DEPT2 --> S2A["💵 Dự báo dòng tiền<br/>Đóng sổ cuối tháng<br/>Nhắc nợ khách hàng<br/>Kế hoạch trả lương"]:::skill
+    DEPT2 --> S2B["📈 Phân tích lợi nhuận<br/>Kiểm tra giá bán<br/>Quyết toán thuế<br/>Cảnh báo cuối tháng"]:::skill
+
+    DEPT3 --> S3A["🎯 Chiến lược nội dung<br/>Chạy campaign<br/>Tạo ảnh Canva<br/>Tóm tắt bán hàng"]:::skill
+    DEPT3 --> S3B["📞 Phân loại lead<br/>Danh sách gọi điện<br/>Cập nhật CRM<br/>Dọn dẹp CRM"]:::skill
+
+    DEPT4 --> S4A["🧑‍💼 Tuyển dụng<br/>Xem xét hợp đồng<br/>Review hợp đồng"]:::skill
+    DEPT4 --> S4B["💬 Xử lý khiếu nại<br/>Giải quyết phàn nàn<br/>Đo nhiệt độ khách hàng<br/>Kiểm tra mạch đập KH"]:::skill
+
+    classDef ceo fill:#1f2937,stroke:#111827,stroke-width:3px,color:#fff
+    classDef claude fill:#7c3aed,stroke:#5b21b6,stroke-width:3px,color:#fff
+    classDef dept1 fill:#0ea5e9,stroke:#0369a1,stroke-width:2px,color:#fff
+    classDef dept2 fill:#10b981,stroke:#047857,stroke-width:2px,color:#fff
+    classDef dept3 fill:#f59e0b,stroke:#b45309,stroke-width:2px,color:#fff
+    classDef dept4 fill:#ef4444,stroke:#b91c1c,stroke-width:2px,color:#fff
+    classDef skill fill:#f3f4f6,stroke:#9ca3af,stroke-width:1px,color:#111827
+```
+
+> 💡 **Cách hoạt động**: Bạn chỉ cần nói chuyện tự nhiên với Claude. Claude sẽ tự nhận biết yêu cầu thuộc phòng ban nào và gọi đúng kỹ năng tương ứng — như cách một CEO giao việc cho từng phòng ban.
+
 ### Ai nên dùng plugin này?
 
 - Chủ doanh nghiệp nhỏ/vừa (1–50 nhân viên)

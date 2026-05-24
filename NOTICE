@@ -1,0 +1,32 @@
+Agent Teams cho Doanh Nghiệp Nhỏ — CES GLOBAL
+Copyright 2025 Công ty Cổ phần Công nghệ Trí tuệ Nhân tạo CES GLOBAL
+
+This product is a derivative work based on the "small-business" plugin from
+the Knowledge Work Plugins repository, originally created by Anthropic.
+
+  Original work:
+    Repository: https://github.com/anthropics/knowledge-work-plugins
+    Plugin: small-business
+    Copyright 2025 Anthropic, PBC
+    Licensed under the Apache License, Version 2.0
+
+Modifications made by CES GLOBAL include, but are not limited to:
+
+  1. Full Vietnamese translation of all 31 skill definitions (SKILL.md)
+     and supporting reference files (data_sources.md, gotchas.md,
+     output_template.md, thresholds.md).
+  2. Renaming of all 31 skill identifiers from English to Vietnamese
+     (e.g., "cash-flow-snapshot" → "du-bao-dong-tien").
+  3. Restructuring of plugin documentation (README.md) according to an
+     enterprise organizational chart model with four functional departments:
+     Operations, Finance, Marketing & Sales, Human Resources & Customer Care.
+  4. Localization of currency, date formats, business terminology, and
+     example scenarios for the Vietnamese small-and-medium enterprise market.
+  5. Minor configuration adjustments to .mcp.json (server identifier
+     normalization, Square SSE transport correction).
+
+All modifications are licensed under the Apache License, Version 2.0,
+the same license as the original work.
+
+A copy of the Apache License is included in the LICENSE file of this
+repository.

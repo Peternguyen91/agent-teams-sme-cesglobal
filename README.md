@@ -212,7 +212,7 @@ Tải Claude desktop app từ [claude.ai/download](https://claude.ai/download) v
 1. Mở Claude Cowork
 2. Click vào biểu tượng **Plugin** ở thanh bên trái
 3. Click **"Cài đặt từ file"** hoặc **"Install from GitHub"**
-4. Nhập URL: `https://github.com/cesglobal/agent-teams-doanh-nghiep-nho-cesglobal`
+4. Nhập URL: `https://github.com/Peternguyen91/agent-teams-sme-cesglobal`
 5. Click **Cài đặt** và chờ 30 giây
 
 ### Bước 3: Kết Nối Phần Mềm Của Bạn
@@ -355,18 +355,63 @@ A: Vẫn phù hợp. Nhiều kỹ năng hoạt động tốt chỉ với thông 
 
 ---
 
+## 🏢 Về CES GLOBAL
+
+### Giới thiệu
+
+**Công ty Cổ phần Công nghệ Trí tuệ Nhân tạo CES GLOBAL** là đơn vị tiên phong trong lĩnh vực **đào tạo, tư vấn và triển khai AI cho doanh nghiệp tại Việt Nam**. CES Global đặt mục tiêu trở thành đơn vị dẫn đầu trong đào tạo AI và các giải pháp đổi mới đột phá, đồng hành cùng doanh nghiệp Việt bứt phá trong kỷ nguyên số.
+
+> **Sứ mệnh**: Lấy **con người làm trung tâm**, **bảo mật dữ liệu** là nguyên tắc cốt lõi, và **sự phát triển bền vững của khách hàng** là thước đo thành công.
+
+### Lĩnh vực hoạt động
+
+| 🎯 Mảng | Mô tả |
+|---|---|
+| **Đào tạo AI** | Xây dựng "khung năng lực AI" cho doanh nghiệp, đào tạo nhân sự ứng dụng AI vào công việc thực tế |
+| **Tư vấn chiến lược AI-First** | Tư vấn lộ trình chuyển đổi số và áp dụng AI Agent vào vận hành doanh nghiệp |
+| **Triển khai giải pháp AI** | Tối ưu vận hành, nâng cao hiệu quả kinh doanh, tạo lợi thế cạnh tranh bằng AI |
+| **Agentic AI & Automation** | Phát triển các AI Agent chuyên biệt theo ngành/phòng ban (như plugin này) |
+
+### Sản phẩm chính của CES GLOBAL
+
+- 🤖 **Plugin Agent Teams** (repo này) — Bộ kỹ năng AI cho doanh nghiệp nhỏ, 100% tiếng Việt
+- 🌐 **[AIGATE](https://ceseduai.vn)** — Nền tảng SaaS sáng tạo nội dung AI (tích hợp GPT-4, Claude, Gemini, tạo ảnh AI, 75+ mẫu)
+- 🎓 **[Ces EduAI](https://ceseduai.vn/about)** — Nền tảng trợ giảng AI cho giáo viên và cơ sở giáo dục
+
+### Khách hàng tiêu biểu
+
+CES GLOBAL đã đào tạo và triển khai giải pháp AI cho nhiều tập đoàn lớn tại Việt Nam:
+
+**Maritime Group** · **Hoà Phát** · **Bảo Việt** · **VNPT** · **Mobifone** · **TH True Milk** ...
+
+### Thông tin liên hệ
+
+| 📍 | **Trụ sở** | 222 Nguyễn Văn Tuyết, Trung Liệt, Đống Đa, Hà Nội |
+|---|---|---|
+| 🌐 | **Website** | [cesglobal.com.vn](https://cesglobal.com.vn/) |
+| ✉️ | **Email** | cesglobal.ai@gmail.com |
+| 📞 | **Hotline** | 091 199 12 88 |
+| 👍 | **Facebook** | [facebook.com/cesvietnam](https://www.facebook.com/cesvietnam/) · [facebook.com/cesglobalacademy](https://www.facebook.com/cesglobalacademy/) |
+| 💼 | **LinkedIn** | [linkedin.com/company/cesglobal222](https://www.linkedin.com/company/cesglobal222) |
+
+---
+
 ## 🛠️ Hỗ Trợ & Đóng Góp
 
-- **Website**: [cesglobal.vn](https://cesglobal.vn)
-- **Báo lỗi**: Tạo Issue trên GitHub repo này
-- **Đóng góp bản dịch**: Gửi Pull Request với file SKILL.md đã cập nhật
+- **Báo lỗi / Yêu cầu tính năng**: Tạo [Issue](https://github.com/Peternguyen91/agent-teams-sme-cesglobal/issues) trên GitHub repo này
+- **Đóng góp bản dịch / kỹ năng mới**: Gửi Pull Request với file `SKILL.md` đã cập nhật
+- **Liên hệ tư vấn AI doanh nghiệp**: Email `cesglobal.ai@gmail.com` hoặc hotline **091 199 12 88**
 
 ---
 
 ## 📜 Bản Quyền
 
-Plugin này được phát triển bởi **CESGLOBAL** dựa trên nền tảng [small-business plugin](https://github.com/anthropics/knowledge-work-plugins) của Anthropic (MIT License). Bản dịch tiếng Việt và các điều chỉnh cho thị trường Việt Nam thuộc quyền sở hữu của CESGLOBAL.
+Plugin này được phát triển bởi **Công ty Cổ phần Công nghệ Trí tuệ Nhân tạo CES GLOBAL** dựa trên nền tảng [small-business plugin](https://github.com/anthropics/knowledge-work-plugins) của Anthropic (MIT License). Bản dịch tiếng Việt, kiến trúc Agent Teams theo phòng ban, và các điều chỉnh cho thị trường Việt Nam thuộc quyền sở hữu của **CES GLOBAL**.
 
 ---
 
-*Được tạo bởi CESGLOBAL — Nâng tầm doanh nghiệp Việt với AI* 🇻🇳
+*Được phát triển bởi **CES GLOBAL** — Nâng tầm doanh nghiệp Việt bằng AI* 🇻🇳
+
+[![Website](https://img.shields.io/badge/Website-cesglobal.com.vn-1e293b?style=flat-square)](https://cesglobal.com.vn/)
+[![Email](https://img.shields.io/badge/Email-cesglobal.ai%40gmail.com-7c3aed?style=flat-square)](mailto:cesglobal.ai@gmail.com)
+[![Hotline](https://img.shields.io/badge/Hotline-091%20199%2012%2088-10b981?style=flat-square)](tel:0911991288)

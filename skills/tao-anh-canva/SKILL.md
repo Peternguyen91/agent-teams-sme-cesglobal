@@ -1,5 +1,8 @@
 ---
 name: tao-anh-canva
+allowed-tools: Read, WebFetch, Bash
+compatibility: "Yêu cầu Canva MCP. Tùy chọn: HubSpot MCP để lên lịch đăng bài; Gmail MCP để bàn giao nội dung email."
+version: "1.1"
 description: >
   Nhận kế hoạch nội dung đã duyệt và thực hiện campaign đầu cuối: xây dựng
   lịch đăng, tạo thiết kế Canva cho bài mạng xã hội, soạn caption và nội

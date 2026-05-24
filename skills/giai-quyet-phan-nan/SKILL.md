@@ -7,6 +7,8 @@ description: >
   email hoặc ID ticket tùy chọn. Kích hoạt khi: "xử lý phàn nàn này",
   "giải quyết khiếu nại", "khách hàng không hài lòng".
 allowed-tools: Read, WebFetch, Bash
+compatibility: "Yêu cầu ít nhất một trong: PayPal MCP hoặc HubSpot MCP. Tùy chọn: Gmail MCP để đọc chuỗi email."
+version: "1.1"
 ---
 
 # Giải Quyết Phàn Nàn

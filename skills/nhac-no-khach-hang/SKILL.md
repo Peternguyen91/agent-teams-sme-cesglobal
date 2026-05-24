@@ -7,6 +7,9 @@ description: >
   với sự phê duyệt của chủ doanh nghiệp; hóa đơn không phải PayPal xếp hàng
   thành bản nháp email. Dùng khi người dùng hỏi "ai còn nợ tôi tiền", đề cập
   hóa đơn quá hạn, hoặc muốn theo dõi hóa đơn chưa thanh toán.
+allowed-tools: Read, WebFetch, Bash
+compatibility: "Yêu cầu QuickBooks MCP. Tùy chọn: PayPal MCP để gửi nhắc nhở trực tiếp; Gmail MCP để tạo bản nháp."
+version: "1.1"
 ---
 
 # Nhắc Nợ Khách Hàng
@@ -118,6 +121,14 @@ Hỏi: "Bạn muốn gửi tất cả, chọn cụ thể, hay sửa bản nào t
 **Hóa đơn không phải PayPal**: Tạo bản nháp email (Gmail/Outlook) cho từng hóa đơn. Chủ doanh nghiệp xem lại và gửi từ hộp thư của mình.
 
 **Luôn xác nhận**: "Đã gửi nhắc nhở cho [Tên Khách Hàng] — [X triệu đồng], quá hạn [N ngày]."
+
+## Xử lý lỗi kết nối
+
+**QuickBooks không khả dụng**: Dừng lại — không thể xác định hóa đơn quá hạn mà không có dữ liệu QB. Thông báo: "Không thể kết nối QuickBooks. Vui lòng kiểm tra kết nối và thử lại."
+
+**PayPal không khả dụng**: Tiếp tục soạn và hiển thị bản nháp bình thường. Bỏ qua bước gửi qua PayPal — chuyển sang tạo bản nháp Gmail cho tất cả hóa đơn. Ghi chú: "PayPal không kết nối — tất cả nhắc nhở sẽ được tạo thành bản nháp Gmail."
+
+**Gmail không khả dụng**: Soạn văn bản email và hiển thị trực tiếp trong chat để chủ sao chép thủ công. Ghi chú rõ ràng cho mỗi bản nháp.
 
 ## Cổng phê duyệt
 

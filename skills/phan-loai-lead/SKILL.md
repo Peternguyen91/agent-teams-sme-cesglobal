@@ -1,5 +1,8 @@
 ---
 name: phan-loai-lead
+allowed-tools: Read, WebFetch, Bash
+compatibility: "Yêu cầu HubSpot MCP. Tùy chọn: Gmail MCP để soạn tin nhắn theo dõi; Google Calendar MCP để đề xuất khung giờ gọi điện."
+version: "1.1"
 description: >
   Chấm điểm lead inbound từ HubSpot theo tín hiệu tương tác, mức độ phù
   hợp với khách hàng lý tưởng, và mức độ khẩn cấp để tạo ra danh sách

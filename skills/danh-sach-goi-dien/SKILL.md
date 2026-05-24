@@ -2,6 +2,8 @@
 name: danh-sach-goi-dien
 description: Xếp hạng top lead đáng gọi nhất hôm nay, cung cấp tài liệu trao đổi từ lịch sử email, chặn thời gian trên lịch và soạn tin nhắn theo dõi. Chấp nhận tùy chọn số lượng và ngày cụ thể.
 allowed-tools: Read, WebFetch, Bash
+compatibility: "Yêu cầu HubSpot MCP. Tùy chọn: Gmail MCP để lấy ngữ cảnh email; Google Calendar MCP để đề xuất chặn lịch."
+version: "1.1"
 ---
 
 Chạy phân loại lead ưu tiên. Quét pipeline, xếp hạng theo độ khẩn cấp và cơ hội, lấy thông tin email liên quan, và chuẩn bị để chủ doanh nghiệp thực hiện các cuộc gọi.

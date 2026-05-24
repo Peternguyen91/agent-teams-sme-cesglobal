@@ -1,5 +1,8 @@
 ---
 name: cap-nhat-crm
+allowed-tools: Read, WebFetch, Bash
+compatibility: "Yêu cầu HubSpot MCP. Tùy chọn: Gmail MCP để đọc chuỗi email; Google Calendar MCP để đọc sự kiện cuộc họp."
+version: "1.1"
 description: >
   Giữ HubSpot luôn cập nhật mà không cần chủ doanh nghiệp phải mở ứng dụng:
   tạo và cập nhật liên hệ/deal từ ngữ cảnh email và lịch, ghi chú cuộc gọi

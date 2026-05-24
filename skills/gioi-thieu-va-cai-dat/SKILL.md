@@ -1,5 +1,8 @@
 ---
 name: gioi-thieu-va-cai-dat
+allowed-tools: Read, WebFetch, Bash
+compatibility: "Không yêu cầu connector trước. Skill này hướng dẫn kết nối connector đầu tiên."
+version: "1.1"
 description: >
   Claude đóng vai người hướng dẫn. Dẫn chủ doanh nghiệp nhỏ qua việc kết nối
   hai phần mềm đầu tiên, chạy một quy trình mẫu để chứng minh giá trị ngay,

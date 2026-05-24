@@ -2,6 +2,8 @@
 name: tom-tat-ban-hang
 description: Tổng hợp sản phẩm bán chạy và bán chậm, xác định xu hướng theo mùa, và tạo kế hoạch nội dung 2 tuần để đẩy mạnh hàng thắng và xử lý hàng chậm. Chấp nhận tùy chọn khoảng thời gian nhìn lại 30, 60 hoặc 90 ngày.
 allowed-tools: Read, WebFetch, Bash
+compatibility: "Yêu cầu ít nhất một trong: PayPal hoặc QuickBooks MCP. Tùy chọn: HubSpot MCP để đối chiếu campaign."
+version: "1.1"
 ---
 
 Chạy phân tích bán hàng và tạo kế hoạch nội dung. Lấy dữ liệu cái gì đang bán (và cái gì không), giải thích nguyên nhân, và tạo kế hoạch nội dung sẵn sàng dùng ngay dựa trên dữ liệu thực tế.

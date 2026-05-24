@@ -1,5 +1,8 @@
 ---
 name: chien-luoc-noi-dung
+allowed-tools: Read, WebFetch, Bash
+compatibility: "Yêu cầu ít nhất một trong: PayPal, Square, hoặc QuickBooks MCP để phân tích doanh thu."
+version: "1.1"
 description: >
   Phân tích dữ liệu bán hàng từ PayPal và QuickBooks để tìm sản phẩm bán
   chạy và sản phẩm chậm, kết hợp xu hướng theo mùa, và tạo ra bản kế hoạch

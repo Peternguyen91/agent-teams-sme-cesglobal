@@ -7,6 +7,8 @@ description: >
   "kiểm tra mạch đập khách hàng", "vấn đề nào đang lặp lại", "top vấn đề
   khách hàng", "phản hồi nào cần gửi tuần này".
 allowed-tools: Read, WebFetch, Bash
+compatibility: "Yêu cầu ít nhất một trong: PayPal MCP hoặc HubSpot MCP. Tùy chọn: Gmail MCP để đọc email phàn nàn và file xuất đánh giá."
+version: "1.1"
 ---
 
 # Kiểm Tra Mạch Đập Khách Hàng

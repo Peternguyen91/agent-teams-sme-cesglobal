@@ -1,5 +1,8 @@
 ---
 name: dieu-phoi-thong-minh
+allowed-tools: Read, WebFetch, Bash
+compatibility: "Không yêu cầu connector cụ thể. Dùng connector nào đang kết nối để điều phối thông minh hơn."
+version: "1.1"
 description: >
   Cửa vào chính của plugin Doanh Nghiệp Nhỏ. Lắng nghe nhu cầu của chủ doanh
   nghiệp — mơ hồ hay cụ thể — và dẫn đến đúng kỹ năng hoặc lệnh phù hợp

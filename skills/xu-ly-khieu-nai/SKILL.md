@@ -6,7 +6,9 @@ description: >
   giọng văn của chủ doanh nghiệp, và có thể hoàn tiền qua PayPal khi được
   phê duyệt rõ ràng. Kích hoạt khi: "soạn phản hồi khách hàng", "trả lời
   khách này", "đơn hàng ở đâu", "khách muốn hoàn tiền".
-compatibility: "Cần PayPal, HubSpot, Gmail. Tùy chọn: Intercom, Square."
+allowed-tools: Read, WebFetch, Bash
+compatibility: "Yêu cầu ít nhất một trong: PayPal MCP hoặc HubSpot MCP. Tùy chọn: Gmail MCP để đọc email khiếu nại; Square MCP thay thế PayPal."
+version: "1.1"
 ---
 
 # Xử Lý Khiếu Nại

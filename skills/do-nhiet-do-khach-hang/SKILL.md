@@ -6,6 +6,9 @@ description: >
   với trích dẫn nguyên văn và danh sách "làm 3 việc này tuần này". Kích hoạt
   khi: "khách hàng đang nghĩ gì", "phân tích đánh giá", "khách hàng đang
   phàn nàn về gì", "có tranh chấp nào không".
+allowed-tools: Read, WebFetch, Bash
+compatibility: "Yêu cầu ít nhất một trong: PayPal MCP hoặc HubSpot MCP. Tùy chọn: Gmail MCP để phân tích email tiêu cực; Square MCP thay thế PayPal."
+version: "1.1"
 ---
 
 # Đo Nhiệt Độ Khách Hàng

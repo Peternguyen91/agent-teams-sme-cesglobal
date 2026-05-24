@@ -281,6 +281,28 @@ Plugin được thiết kế để tiếp nhận câu hỏi bằng tiếng Việ
 
 ---
 
+## Cấu Trúc Kỹ Thuật
+
+Mỗi kỹ năng là một thư mục con trong `skills/`, chứa ít nhất một file `SKILL.md`. Các kỹ năng phức tạp còn có thư mục `reference/` với tài liệu hỗ trợ:
+
+```
+skills/
+  {ten-ky-nang}/
+    SKILL.md                    # Hướng dẫn thực thi chính
+    reference/
+      gotchas.md                # Lỗi thường gặp + cách tránh (Bad/Good)
+      data_sources.md           # Cấu trúc dữ liệu từng connector
+      thresholds.md             # Ngưỡng cảnh báo tài chính
+      output_template.md        # Định dạng đầu ra chuẩn
+      examples/
+        pl-narrative.md         # Ví dụ tường thuật P&L
+        worked-example.md       # Ví dụ đầy đủ với số liệu mẫu
+```
+
+Các kỹ năng có `reference/`: `bao-cao-tong-quan`, `gioi-thieu-va-cai-dat`, `dong-so-cuoi-thang`, `du-bao-dong-tien`, `xu-ly-khieu-nai`, `do-nhiet-do-khach-hang`, `tao-anh-canva`.
+
+---
+
 ## Câu Hỏi Thường Gặp
 
 **Plugin có truy cập dữ liệu thật của doanh nghiệp?**

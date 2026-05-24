@@ -7,6 +7,8 @@ description: >
   Kích hoạt khi: "xem lại hợp đồng này", "kiểm tra điều khoản", "có điểm gì
   nguy hiểm không", "đánh dấu rủi ro hợp đồng".
 allowed-tools: Read, WebFetch, Bash
+compatibility: "Không yêu cầu connector — hoạt động hoàn toàn với file cục bộ. Tùy chọn: DocuSign MCP để lấy phong bì đang chờ ký."
+version: "1.1"
 ---
 
 # Xem Xét Hợp Đồng

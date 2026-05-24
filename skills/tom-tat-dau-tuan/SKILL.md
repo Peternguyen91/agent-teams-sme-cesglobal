@@ -2,6 +2,8 @@
 name: tom-tat-dau-tuan
 description: Tạo bản tin sáng thứ Hai một trang — tiền mặt, bán hàng, pipeline, lịch tuần, top 3 việc cần làm. Chấp nhận tùy chọn nơi đăng và nơi lưu.
 allowed-tools: Read, WebFetch, Bash
+compatibility: "Tùy chọn: QuickBooks, PayPal/Square, HubSpot, Gmail, Google Calendar, Slack/Teams, Google Drive. Giảm dần với các connector đang kết nối."
+version: "1.1"
 ---
 
 Chạy Bản Tin Sáng Thứ Hai. Lấy từ mọi phần mềm đang hoạt động, giảm dần khi thiếu, và tạo bản tin một trang chủ doanh nghiệp đọc được trong dưới 2 phút.

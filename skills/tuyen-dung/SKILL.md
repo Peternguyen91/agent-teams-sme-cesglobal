@@ -1,5 +1,8 @@
 ---
 name: tuyen-dung
+allowed-tools: Read, WebFetch, Bash
+compatibility: "Yêu cầu kỹ năng docx để tạo file. Tùy chọn: DocuSign MCP để gửi thư chào mời điện tử; Gmail MCP để soạn email dự phòng khi DocuSign không khả dụng."
+version: "1.1"
 description: >
   Xây dựng bộ hồ sơ tuyển dụng đầy đủ — mô tả công việc, hướng dẫn phỏng
   vấn có thang điểm, và mẫu thư chào mời — từ một cuộc trò chuyện ngắn về

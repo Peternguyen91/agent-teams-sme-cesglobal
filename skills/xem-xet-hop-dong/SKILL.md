@@ -1,5 +1,8 @@
 ---
 name: xem-xet-hop-dong
+allowed-tools: Read, WebFetch, Bash
+compatibility: "Không yêu cầu connector — hoạt động hoàn toàn với file cục bộ. Tùy chọn: Gmail MCP để lấy hợp đồng từ email đính kèm; DocuSign MCP để lấy phong bì đang chờ ký."
+version: "1.1"
 description: >
   Xem xét hợp đồng NDA, MSA và hợp đồng nhà cung cấp cho doanh nghiệp nhỏ
   chưa có bộ phận pháp lý. Đọc hợp đồng từ file cục bộ, tệp đính kèm Gmail,

@@ -1,5 +1,8 @@
 ---
 name: phan-tich-bien-loi-nhuan
+allowed-tools: Read, WebFetch, Bash
+compatibility: "Yêu cầu QuickBooks MCP. Tùy chọn: PayPal MCP để đối chiếu doanh thu và khối lượng."
+version: "1.1"
 description: >
   Phân tích kinh tế đơn vị theo sản phẩm hoặc dịch vụ dùng dữ liệu PayPal và
   QuickBooks, đối chiếu với lạm phát và thay đổi chi phí, và hiển thị dữ liệu
@@ -82,6 +85,14 @@ Kết thúc với:
 > "Dưới đây là dữ liệu. Tôi không thể khuyến nghị mức giá đúng — điều đó phụ thuộc vào chiến lược, thị trường và khả năng chấp nhận của khách hàng của bạn. Nhưng dữ liệu cho thấy [X]."
 
 Sau đó hỏi: "Bạn có muốn tôi chạy `/dong-so-cuoi-thang` để xem chi tiết chi phí hơn không?"
+
+## Xử lý lỗi kết nối
+
+**QuickBooks không khả dụng**: Dừng lại — phân tích margin yêu cầu dữ liệu doanh thu và chi phí từ QB. Thông báo rõ ràng và đề nghị thử lại sau.
+
+**PayPal không khả dụng**: Tiếp tục từ dữ liệu QB. Ghi chú: "PayPal không kết nối — bỏ qua đối chiếu khối lượng PayPal. Phân tích dựa hoàn toàn trên dữ liệu QuickBooks."
+
+**COGS chưa phân loại trong QB**: Dừng Bước 2, hỏi chủ doanh nghiệp ước tính chi phí trực tiếp cho từng sản phẩm. Không tự giả định chi phí. Ghi chú rõ "Dữ liệu COGS là ước tính — không phải từ QuickBooks" trong toàn bộ phân tích.
 
 ## Cổng phê duyệt
 

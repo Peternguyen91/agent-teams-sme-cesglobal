@@ -1,0 +1,34 @@
+# Hệ điều hành
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Thumbs.db
+ehthumbs.db
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Node (nếu có script tự động hóa sau này)
+node_modules/
+npm-debug.log*
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.env
+venv/
+
+# Logs
+*.log
+logs/
+
+# Tạm thời
+*.tmp
+*.bak

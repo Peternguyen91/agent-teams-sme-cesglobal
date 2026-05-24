@@ -1,0 +1,19 @@
+{
+  "name": "agent-teams-doanh-nghiep-nho-cesglobal",
+  "version": "1.0.0",
+  "description": "Bộ quy trình tự động hóa dành cho doanh nghiệp nhỏ Việt Nam — bao gồm quản lý tài chính, marketing, bán hàng, nhân sự và vận hành. Claude làm trợ lý điều phối, bạn phê duyệt mọi bước liên quan đến tiền và khách hàng.",
+  "author": {
+    "name": "CESGLOBAL",
+    "url": "https://cesglobal.vn"
+  },
+  "keywords": [
+    "doanh nghiep nho",
+    "sme",
+    "tai chinh",
+    "marketing",
+    "nhan su",
+    "van hanh",
+    "tieng viet",
+    "cesglobal"
+  ]
+}

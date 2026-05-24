@@ -18,41 +18,164 @@
 
 ### 🏢 Sơ đồ Tổ chức AI Agent Teams
 
-Plugin tổ chức 31 kỹ năng theo mô hình phòng ban như một doanh nghiệp thật. Bạn là **Giám đốc**, Claude là **Trưởng phòng Điều phối** dẫn dắt 4 phòng ban chuyên môn:
+Plugin được tổ chức **như một công ty thật**: bạn là CEO, Claude là Tổng điều phối, và 31 kỹ năng được sắp xếp thành **4 phòng ban chuyên môn** với các "nhân viên AI" cụ thể.
 
 ```mermaid
-flowchart TD
-    CEO["👤 BẠN<br/>Chủ Doanh Nghiệp / CEO"]:::ceo
-    CLAUDE["🤖 CLAUDE<br/>Trưởng phòng Điều phối AI"]:::claude
+flowchart TB
+    CEO("👔 <b>BẠN — CEO / Chủ Doanh Nghiệp</b><br/>━━━━━━━━━━━━━━━<br/>📌 Ra quyết định cuối cùng<br/>📌 Phê duyệt mọi hành động"):::ceo
 
-    CEO -->|Ra lệnh & Phê duyệt| CLAUDE
+    CLAUDE("🤖 <b>CLAUDE AI — Tổng Điều Phối</b><br/>━━━━━━━━━━━━━━━<br/>📌 Hiểu yêu cầu tiếng Việt tự nhiên<br/>📌 Phân việc đúng phòng ban<br/>📌 Tổng hợp kết quả trình bạn"):::claude
 
-    CLAUDE --> DEPT1["🏠 PHÒNG ĐIỀU HÀNH<br/>Tổng quan & Điều phối<br/>(6 kỹ năng)"]:::dept1
-    CLAUDE --> DEPT2["💰 PHÒNG TÀI CHÍNH<br/>Kế toán & Dòng tiền<br/>(10 kỹ năng)"]:::dept2
-    CLAUDE --> DEPT3["📣 PHÒNG MARKETING & SALES<br/>Bán hàng & Khách hàng<br/>(8 kỹ năng)"]:::dept3
-    CLAUDE --> DEPT4["👥 PHÒNG NHÂN SỰ & VẬN HÀNH<br/>HR & Chăm sóc KH<br/>(7 kỹ năng)"]:::dept4
+    CEO <==>|"Trao đổi & phê duyệt"| CLAUDE
 
-    DEPT1 --> S1A["📊 Báo cáo tổng quan<br/>Tóm tắt đầu tuần<br/>Tổng kết cuối tuần<br/>Báo cáo quý"]:::skill
+    CLAUDE --> DEPT1
+    CLAUDE --> DEPT2
+    CLAUDE --> DEPT3
+    CLAUDE --> DEPT4
 
-    DEPT2 --> S2A["💵 Dự báo dòng tiền<br/>Đóng sổ cuối tháng<br/>Nhắc nợ khách hàng<br/>Kế hoạch trả lương"]:::skill
-    DEPT2 --> S2B["📈 Phân tích lợi nhuận<br/>Kiểm tra giá bán<br/>Quyết toán thuế<br/>Cảnh báo cuối tháng"]:::skill
+    subgraph DEPT1["🏠 PHÒNG ĐIỀU HÀNH — 6 kỹ năng"]
+        direction TB
+        D1A["📊 Báo cáo tổng quan"]
+        D1B["📅 Tóm tắt đầu tuần"]
+        D1C["📋 Tổng kết cuối tuần"]
+        D1D["📈 Báo cáo quý"]
+        D1E["🧭 Điều phối thông minh"]
+        D1F["⚙️ Giới thiệu & cài đặt"]
+    end
 
-    DEPT3 --> S3A["🎯 Chiến lược nội dung<br/>Chạy campaign<br/>Tạo ảnh Canva<br/>Tóm tắt bán hàng"]:::skill
-    DEPT3 --> S3B["📞 Phân loại lead<br/>Danh sách gọi điện<br/>Cập nhật CRM<br/>Dọn dẹp CRM"]:::skill
+    subgraph DEPT2["💰 PHÒNG TÀI CHÍNH — 10 kỹ năng"]
+        direction TB
+        D2A["💵 Dự báo dòng tiền"]
+        D2B["📒 Đóng sổ cuối tháng"]
+        D2C["📊 Phân tích biên lợi nhuận"]
+        D2D["⏰ Nhắc nợ khách hàng"]
+        D2E["💼 Kế hoạch trả lương"]
+        D2F["🏷️ Kiểm tra giá bán"]
+        D2G["🧾 Chuẩn bị quyết toán thuế"]
+        D2H["📑 Tổ chức mùa quyết toán"]
+        D2I["🔄 Đóng sổ tháng"]
+        D2J["⚠️ Cảnh báo cuối tháng"]
+    end
 
-    DEPT4 --> S4A["🧑‍💼 Tuyển dụng<br/>Xem xét hợp đồng<br/>Review hợp đồng"]:::skill
-    DEPT4 --> S4B["💬 Xử lý khiếu nại<br/>Giải quyết phàn nàn<br/>Đo nhiệt độ khách hàng<br/>Kiểm tra mạch đập KH"]:::skill
+    subgraph DEPT3["📣 PHÒNG MARKETING & SALES — 8 kỹ năng"]
+        direction TB
+        D3A["🎯 Chiến lược nội dung"]
+        D3B["📧 Chạy campaign"]
+        D3C["🖼️ Tạo ảnh Canva"]
+        D3D["🛒 Tóm tắt bán hàng"]
+        D3E["⭐ Phân loại lead"]
+        D3F["📞 Danh sách gọi điện"]
+        D3G["💾 Cập nhật CRM"]
+        D3H["🧹 Dọn dẹp CRM"]
+    end
 
-    classDef ceo fill:#1f2937,stroke:#111827,stroke-width:3px,color:#fff
+    subgraph DEPT4["👥 PHÒNG NHÂN SỰ & CSKH — 7 kỹ năng"]
+        direction TB
+        D4A["🧑‍💼 Tuyển dụng"]
+        D4B["📄 Xem xét hợp đồng"]
+        D4C["🔍 Review hợp đồng (nâng cao)"]
+        D4D["💬 Xử lý khiếu nại"]
+        D4E["🤝 Giải quyết phàn nàn"]
+        D4F["🌡️ Đo nhiệt độ khách hàng"]
+        D4G["❤️ Kiểm tra mạch đập KH"]
+    end
+
+    classDef ceo fill:#1e293b,stroke:#0f172a,stroke-width:3px,color:#fff
     classDef claude fill:#7c3aed,stroke:#5b21b6,stroke-width:3px,color:#fff
-    classDef dept1 fill:#0ea5e9,stroke:#0369a1,stroke-width:2px,color:#fff
-    classDef dept2 fill:#10b981,stroke:#047857,stroke-width:2px,color:#fff
-    classDef dept3 fill:#f59e0b,stroke:#b45309,stroke-width:2px,color:#fff
-    classDef dept4 fill:#ef4444,stroke:#b91c1c,stroke-width:2px,color:#fff
-    classDef skill fill:#f3f4f6,stroke:#9ca3af,stroke-width:1px,color:#111827
 ```
 
-> 💡 **Cách hoạt động**: Bạn chỉ cần nói chuyện tự nhiên với Claude. Claude sẽ tự nhận biết yêu cầu thuộc phòng ban nào và gọi đúng kỹ năng tương ứng — như cách một CEO giao việc cho từng phòng ban.
+> 💡 **Cách vận hành**: Bạn nói "Tháng này dòng tiền sao rồi?" → Claude nhận yêu cầu → tự động gọi kỹ năng **Dự báo dòng tiền** trong Phòng Tài chính → kết nối QuickBooks → trình báo cáo → chờ bạn phê duyệt hành động tiếp theo.
+
+---
+
+## 🎯 Plugin Này Hỗ Trợ Doanh Nghiệp Được Gì?
+
+Doanh nghiệp nhỏ thường **thiếu người** nhưng vẫn phải làm đủ việc của một công ty lớn. Plugin này giải quyết 6 vấn đề cốt lõi:
+
+### 1️⃣ Tiết kiệm 10–20 giờ/tuần cho chủ doanh nghiệp
+Thay vì tự tay làm báo cáo, gửi nhắc nợ, soạn email phản hồi khách... Claude làm sẵn — bạn chỉ duyệt.
+
+### 2️⃣ Không cần thuê thêm nhân sự
+1 chủ doanh nghiệp + Claude = đội ngũ tương đương kế toán bán thời gian + marketer + sales admin + HR.
+
+### 3️⃣ Không bỏ sót việc quan trọng
+- ⚠️ Cảnh báo trước khi hết tiền trả lương (ngày 25 hàng tháng)
+- 📞 Nhắc khách nợ tự động
+- 📊 Báo cáo định kỳ không bị quên
+
+### 4️⃣ Ra quyết định dựa trên số liệu, không phải cảm tính
+Mọi báo cáo (P&L, dòng tiền, lead quality, hiệu quả campaign) đều rút từ phần mềm thật, không phải đoán.
+
+### 5️⃣ Giảm rủi ro pháp lý & tài chính
+- Review hợp đồng phát hiện điều khoản bất lợi trước khi ký
+- Đối chiếu QuickBooks vs cổng thanh toán → phát hiện sai lệch sớm
+- Chuẩn bị quyết toán thuế đầy đủ → tránh phạt
+
+### 6️⃣ Chăm sóc khách hàng chuyên nghiệp hơn
+Phản hồi khiếu nại trong giờ thay vì ngày. Theo dõi "nhiệt độ" khách hàng để giữ chân khách cũ.
+
+| 📌 Tình huống thực tế | ⏱️ Trước khi có plugin | ✅ Sau khi có plugin |
+|---|---|---|
+| Lập báo cáo dòng tiền tháng | 2-3 giờ làm tay | 5 phút duyệt báo cáo Claude tạo |
+| Soạn 10 email nhắc nợ | 1 giờ viết từng cái | Claude soạn sẵn, bạn duyệt 10 phút |
+| Phân tích lead nào ưu tiên gọi | Đoán theo cảm tính | Claude xếp hạng theo dữ liệu CRM |
+| Tạo 5 ảnh đăng Facebook | 2 giờ ngồi Canva | 15 phút duyệt mẫu Claude tạo |
+| Review hợp đồng 20 trang | Gửi luật sư (5 triệu) | Claude flag rủi ro miễn phí, luật sư chỉ check điều khoản đáng ngờ |
+
+---
+
+## 🔄 Doanh Nghiệp Sử Dụng Repo Này Như Thế Nào?
+
+### Quy trình 5 bước từ A đến Z
+
+```mermaid
+flowchart LR
+    A["1️⃣<br/>CÀI ĐẶT<br/>(1 lần)"]:::s1 --> B["2️⃣<br/>KẾT NỐI<br/>phần mềm"]:::s2 --> C["3️⃣<br/>HỎI tự nhiên<br/>bằng tiếng Việt"]:::s3 --> D["4️⃣<br/>DUYỆT<br/>kết quả Claude"]:::s4 --> E["5️⃣<br/>LẶP LẠI<br/>hàng ngày/tuần"]:::s5
+    E -.->|Tự động hóa dần| C
+
+    classDef s1 fill:#dbeafe,stroke:#1d4ed8,color:#1e3a8a
+    classDef s2 fill:#dcfce7,stroke:#15803d,color:#14532d
+    classDef s3 fill:#fef3c7,stroke:#b45309,color:#78350f
+    classDef s4 fill:#fce7f3,stroke:#be185d,color:#831843
+    classDef s5 fill:#e9d5ff,stroke:#7c3aed,color:#581c87
+```
+
+### Lộ trình triển khai theo tuần
+
+**📅 Tuần 1 — Khởi động (2 giờ)**
+1. Cài Claude Cowork → cài plugin từ repo này (xem [Hướng dẫn cài đặt](#-hướng-dẫn-cài-đặt))
+2. Kết nối **1–2 phần mềm quan trọng nhất** với bạn (thường là QuickBooks + HubSpot, hoặc Gmail + Calendar)
+3. Thử ngay câu: *"Cho tôi xem tình hình kinh doanh hôm nay"*
+
+**📅 Tuần 2 — Tài chính (việc cấp bách nhất)**
+- Sáng thứ 2: *"Tóm tắt tài chính tuần qua"*
+- Giữa tuần: *"Khách nào đang nợ tiền tôi? Soạn email nhắc nợ"*
+- Cuối tháng: *"Đóng sổ tháng và lập P&L"*
+
+**📅 Tuần 3 — Bán hàng & Marketing**
+- *"Top 5 lead tôi nên gọi hôm nay"*
+- *"Lên kế hoạch nội dung 30 ngày cho Facebook"*
+- *"Tạo 5 ảnh đăng cho sản phẩm X"*
+
+**📅 Tuần 4 — Vận hành định kỳ**
+- Tự động hóa: báo cáo tuần, nhắc nợ, cập nhật CRM
+- Khi cần: tuyển dụng, review hợp đồng, xử lý khiếu nại
+
+### Ai trong doanh nghiệp dùng plugin này?
+
+| Vai trò | Sử dụng plugin để... |
+|---|---|
+| 👔 **Chủ doanh nghiệp / CEO** | Xem báo cáo tổng quan, quyết định chiến lược, duyệt hành động |
+| 💰 **Kế toán / Quản lý tài chính** | Đóng sổ, đối soát, dự báo dòng tiền, chuẩn bị quyết toán |
+| 📣 **Marketing / Sales** | Lên content, chạy campaign, phân loại lead, cập nhật CRM |
+| 👥 **HR / Admin** | Đăng tuyển, soạn offer, xem xét hợp đồng |
+| 📞 **Chăm sóc khách hàng** | Xử lý khiếu nại, đo lường feedback khách |
+
+> 💡 **Doanh nghiệp 1–5 người**: 1 chủ doanh nghiệp có thể dùng cả 31 kỹ năng. Plugin đóng vai trò như một đội ngũ ảo.
+>
+> 💡 **Doanh nghiệp 10–50 người**: Mỗi nhân viên dùng kỹ năng thuộc phòng ban của mình. Chủ doanh nghiệp dùng nhóm "Điều hành" để theo dõi tổng thể.
+
+---
 
 ### Ai nên dùng plugin này?
 
